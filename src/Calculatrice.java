@@ -53,6 +53,7 @@ public class Calculatrice {
 
     public double reset(double a, double b) {
         double resultat = 0.0;
+
         historique.add("reset: "+resultat);
         return resultat;
     }

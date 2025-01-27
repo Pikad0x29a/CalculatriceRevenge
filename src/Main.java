@@ -4,12 +4,12 @@ public class Main {
     public static void main(String[] args) {
 
     Double a= 8.0;
-    Double  b= 2.0;
+    Double  b= 0.0;
 
     Calculatrice calculatrice = new Calculatrice();
 
     /* Premier jet avant de temps de faire une selection
-        Voir l'implémentation d'un switch case
+        Voir l'implémentation d'un switch case => cf README.md
      */
 
     Double addition = calculatrice.addition(a, b);
@@ -19,12 +19,11 @@ public class Main {
     Double modulo = calculatrice.modulo(a, b);
     Double reset = calculatrice.reset(a,b);
 
-
-
     /* gestion des erreurs à implémenter (div et modulo par 0)
     A voir selon le temps si simple message d'erreur
     ou
-    tentative de try/catch */
+    tentative de try/catch remplacée par throw new (cf README.md)
+    Non prise en compte de la gestion par zéro suite à échange avec le formateur*/
 
 
     //Affichage des résultats
