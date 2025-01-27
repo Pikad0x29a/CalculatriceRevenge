@@ -1,15 +1,42 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    Double a= 0.0;
+    Double  b= 0.0;
+
+    Calculatrice calculatrice = new Calculatrice();
+
+    /* Premier jet avant de temps de faire une selection
+        Voir l'implémentation d'un switch case
+     */
+    Double addition = calculatrice.addition(a, b);
+    Double soustraction = calculatrice.soustraction(a, b);
+    Double multiplication = calculatrice.multiplication(a,b);
+    Double division =calculatrice.division(a, b);
+    Double modulo = calculatrice.modulo(a, b);
+    Double reset = calculatrice.reset();
+
+
+
+    /* gestion des erreurs à implémenter (div et modulo par 0)
+    A voir selon le temps si simple message d'erreur
+    ou
+    tentative de try/catch */
+
+
+    //Affichage des résultats
+    System.out.println("addition:"+addition);
+    System.out.println("soustraction:"+soustraction);
+    System.out.println("multiplication:"+multiplication);
+    System.out.println("division:"+division);
+    System.out.println("modulo:"+modulo);
+    System.out.println("reset:"+reset);
+    calculatrice.afficherHistorique();
+
+
     }
+
+
 }
